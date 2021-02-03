@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice d'application</title>
+    <link rel="stylesheet" href="jarditou_css/assets/css/style.css">
+    <link rel="icon" type="image/png"
+        href="https://www.pinclipart.com/picdir/big/575-5753846_logo-libre-de-droit-gratuit-png-clipart.png" />
+</head>
+
+<body>
+    <header>
+        <p><b>PAGE ACCUEIL :</b></p>
+        <img id="logo" src="src/img/jarditou_logo.jpg" title="logo de jarditou" alt="logo de jarditou">
+        <p>La qualité depuis 70 ans</p>
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="file:///U:/Partage/No%C3%A9/FRONT/STATIQUE/HTML/Exapp/index.html" title="accueil">Accueil</a>
+            </li>
+            <li><a href="file:///U:/Partage/No%C3%A9/FRONT/STATIQUE/HTML/Exapp/tableau.html" title="tableau">Tableau</a>
+            </li>
+            <li><a href="file:///U:/Partage/No%C3%A9/FRONT/STATIQUE/HTML/Exapp/contact.html" title="contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <img id="promotion" src="src/img/promotion.jpg" title="Terrase en promotion" alt="Terrase en promotion">
+        <h1>Contact</h1>
+        <hr>
+        <p>* Ces zones sont obligatoires</p>
+        <form action="destination.php" method="POST" id="formulaire_contact">
+            <fieldset>
+                <legend>Coordonnées</legend>
+                <label for="nom">Nom* : </label><input type="text" name="nom" id="nom" required><br>
+                <label for="prénom">Prénom* : </label><input type="text" name="rénom" id="prénom" required><br>
+                <label for="sexe">Sexe* : </label>
+                <input type="radio" name="genre" value="Masculin" id="sexe" required> Masculin
+                <input type="radio" name="genre" value="Féminin"> Féminin<br>
+                <label for="date">Date de naissance* : </label><input type="date" name="ddn" id="date" required><br>
+                <label for="postal">Code postal* : </label><input type="text" name="postal" id="postal" pattern="[0-9]*"
+                    required><br>
+                <label for="adresse">Adresse : </label><input type="text" name="adresse" id="adresse"
+                    pattern="[A-Za-z0-9'\.\-\s\,]"><br>
+                <label for="ville">Ville : </label><input type="text" name="ville" id="ville"><br>
+                <label for="email">Email* : </label><input type="email" name="email" id="email"
+                    placeholder="dave.loper@afpa.fr" required>
+            </fieldset><br>
+            <fieldset>
+                <legend>Votre demande</legend>
+                <label for="sujet">Sujet* : </label>
+                <select id="sujet" size="1">
+                    <option value="choisir" disabled>Veuillez sélectionner un sujet</option>
+                    <option value="produit">Question sur un produit</option>
+                    <option value="reclamer">Réclamation</option>
+                    <option value="autres">Autres</option>
+                </select><br>
+                <label for="question"> Votre question* : </label><textarea name="question" id="question" cols="30"
+                    rows="3" required></textarea>
+            </fieldset><br>
+            <input type="checkbox" id="condition" name="condition" required>
+            <label for="condition">* J'accepte le traitement informatique de ce formulaire</label>
+            <br>
+            <button type="submit" value="envoyer">Envoyer</button>
+            <button type="reset" value="annuler">Annuler</button>
+        </form>
+    </section>
+    <hr>
+    <footer>
+        <ul>
+            <li><a href="" title="mention-legale">Mention légale</a>
+            </li>
+            <li><a href="" title="horaire">Horaires</a>
+            </li>
+            <li><a href="" title="Plan">Plan du site</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: red;
+}
+.part {
+    text-align: center;
+    font-size: 30px;
+}
+#first-exercices {
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+}
+
+#seconde-exercices {
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+}

@@ -1,0 +1,14 @@
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: red;
+}
+#numbered-lists {
+    text-align: center;
+    font-size: 30px;
+}
+
+#Unclassified-lists {
+    text-align: center;
+    font-size: 30px;
+}

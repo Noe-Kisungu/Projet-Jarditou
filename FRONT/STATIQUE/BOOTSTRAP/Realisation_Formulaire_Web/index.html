@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Realisation_Formulaire_Web</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="index.php" method="post">
+            <fieldset>
+                <label for="lastname">Nom :</label>
+                <input class="form-control" type="text" name="lastname" id="lastname" placeholder="Votre nom"><br>
+                <label for="firstname">Prénom :</label>
+                <input class="form-control" type="text" name="firstname" id="firstname" placeholder="Votre prénom"><br>
+                <label for="gender">Sexe :</label>
+                <select id="gender" class="form-control">
+                    <option value="female">Féminin </option>
+                    <option value="male">Masculin </option>
+                </select>
+                <label for="e-mail">Email :</label>
+                <input class="form-control" type="email" name="e-mail" id="e-mail" placeholder="nom@exemple.com"><br>
+                <label for="password">Mot de passe :</label>
+                <input type="password" class="form-control" name="password" id="password">
+                <br>
+                <input type="checkbox" name="accept" value="accept"> J'accepte les conditions
+                formulaire<br><br>
+                <input class="btn btn-primary" type="submit" value="Envoyer">
+            </fieldset>
+        </form>
+    </div>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+
+</html>

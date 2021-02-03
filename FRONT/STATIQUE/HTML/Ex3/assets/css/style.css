@@ -1,0 +1,44 @@
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: red;
+}
+
+#setpoint {
+    text-align: center;
+    font-style: italic;
+}
+
+blockquote {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+blockquote, #depreciated {
+    text-align: center;
+    font-size: larger;
+    color: white;
+    padding: 50px;
+    background: rgb(146, 2, 2);
+    border-radius: 50px;
+    writing-mode: horizontal-tb;
+}
+
+#alert {
+    margin-left: 40%;
+    margin-right: 40%;
+    padding: 5px;
+    border: 1px solid #999;
+    text-align: center;
+}
+
+.advice {
+    text-align: center;
+}
+h2 {
+   text-align: center;
+}
+
+#footer {
+    text-align: center;
+    border: solid;
