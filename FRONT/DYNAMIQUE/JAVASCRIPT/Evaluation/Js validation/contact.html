@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/stylej.css"> -->
+    <title>Exercice d'application 3</title>
+    <link rel="icon" type="image/png"
+        href="https://www.pinclipart.com/picdir/big/575-5753846_logo-libre-de-droit-gratuit-png-clipart.png" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <!-- START of logo -->
+            <div class="row">
+                <div class="col d-none d-lg-block">
+                    <a href="index.html"><img src="img/jarditou_logo.jpg" alt="logo" height="50" width="150"></a>
+                </div>
+                <div class="col d-none d-lg-block">
+                    <h1 class="text-right pr-5">La qualité depuis 70 ans</h1>
+                </div>
+            </div>
+            <!-- END logo/START navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.html">Jarditou.com</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Accueil<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tableau.html">Tableau</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Votre promotion">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
+                    </form>
+                </div>
+            </nav>
+            <!-- END navbar  -->
+            <div>
+                <img class="img-fluid" src="img/promotion.jpg" alt="promotion">
+            </div>
+        </header>
+        <!-- END header -->
+        <div>
+            <section>
+                <p>* Ces zones sont obligatoires</p>
+                <!-- onSubmit -->
+                <form name="formulaire" action="http://bienvu.net/script.php" method="post"
+                    onsubmit="return inspect(this);"> 
+                    <!-- lors de l'envoie du formulaire, il appel et utilise la fonction  inspect()  -->
+                    <!-- this = ce truc la -->
+                    <fieldset>
+                        <h2>Vos coordonnées</h2>
+                        <!-- Name -->
+                        <label for="nom">Votre nom* :</label>
+                        <input class="form-control" type="text" name="nom" id="nom"
+                            placeholder="Veuilez saisir votrer nom">
+                            <span id="nomerr"></span><br>
+                        <!-- Lastname -->
+                        <label for="prenom">Votre prénom* :</label>
+                        <input class="form-control" type="text" name="prenom" id="prenom"
+                            placeholder="Veuilez saisir votrer prénom"> 
+                            <span id="prenomerr"></span><br>
+                        <!-- Radio gender -->
+                        Sexe*: <br>
+                        <div id="radiogender">
+                            <input type="radio" id="feminin" name="gender" value="female">
+                            <label class="mr-2" for="feminin">Féminin</label>
+                            <input type="radio" id="masculin" name="gender" value="male">
+                            <label class="mr-2" for="masculin">Masculin</label>
+                        </div>
+                        <br>
+                        <!-- birthdate -->
+                        <label for="ddn">Date de naissance*:</label>
+                        <input class="form-control" type="date" name="ddn" id="ddn" required><br>
+                        <!-- Zipcode -->
+                        <label for="postal">Code postal* :</label>
+                        <input  class="form-control" type="text" name="postal" id="postal" maxlength="5">
+                        <span id="postalerr"></span><br>
+                        <!-- address -->
+                        <label for="address">Adresse* :</label>
+                        <input class="form-control" type="text" name="address" id="address">
+                        <span id="addresserr"></span><br>
+                        <!-- city -->
+                        <label for="ville">Ville* :</label>
+                        <input class="form-control" type="text" name="ville" id="ville"><br>
+                        <span id="villerr"></span><br>
+                        <!-- mail -->
+                        <label for="email">Email* :</label>
+                        <input class="form-control" type="email" name="email" id="email"
+                            placeholder="dave.loper@afpa.fr" required><br>
+                    </fieldset>
+                    <fieldset>
+                        <h2>Votre demande</h2>
+                        <!-- about -->
+                        <label for="sujet">Sujet* :</label>
+                        <select class="form-control" id="sujet">
+                            <option value="" required selected>Veuillez selectionner un sujet</option>
+                            <option value="Commandes">Mes commandes</option>
+                            <option value="Produit">Question sur un produit</option>
+                            <option value="Réclamation">Réclamation</option>
+                            <option value="Autres">Autres</option>
+                        </select><br>
+                        <!-- your question -->
+                        <label for="question">Votre question*:</label>
+                        <textarea class="form-control" id="question" name="question" required></textarea>
+                    </fieldset><br>
+                    <input type="checkbox" name="opt-in" value="opt-in"> J'accepte le traitement informatique de ce
+                    formulaire<br><br>
+                    <input class="btn btn-dark border border-primary" type="submit" name="envoyer" value="envoyer"
+                        id="envoyer">
+                    <input class="btn btn-dark border border-primary" type="reset" name="annuler" value="annuler">
+                </form>
+            </section>
+        </div>
+        <!-- END section -->
+        <!-- margin-top-3 sur grand ecran-->
+        <footer class="navbar navbar-expand-lg bg-dark mt-3 rounded">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#" title="mention-legale">Mention légales</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" title="Horaire">Horaires</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" title="Plan">Plan du site</a></li>
+            </ul>
+        </footer>
+    </div>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="form.js"></script>
+</body>
+
+
+</html>
