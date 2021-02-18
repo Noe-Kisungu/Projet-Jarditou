@@ -1,6 +1,6 @@
 var zipc = new RegExp(/^[0-9]*$/);
 var lettre = new RegExp(/^[A-Za-z]+$/);
-var  mixt = new RegExp 
+var mixt = new RegExp (/^[A-Za-z0-9_-]*$/); 
 // var lettre = new RegExp (/^[a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]+)?$/);
 function inspect(formulaire)//prend le formulaire par son `nom '()'
 {// declaration des variable (sans oublier value)
@@ -22,7 +22,7 @@ function inspect(formulaire)//prend le formulaire par son `nom '()'
     document.getElementById('nomerr').style.color = "red";
     document.getElementById("nomerr").innerHTML = "Ne correspond pas au bon format";
     Bool = false;
-    document.getElementById("nom").focus();
+    document.getElementById("nom").focus();//Afin de rediriger l'utilisateur sur le champ concerné
   }
   else {
     document.getElementById("nomerr").innerHTML = "";
@@ -68,7 +68,7 @@ function inspect(formulaire)//prend le formulaire par son `nom '()'
     Bool = false;
     document.getElementById("address").focus();
   }
-  else if (!lettre.test(address)) {
+  else if (!mixt.test(address)) {
     document.getElementById('addresserr').style.color = "red";
     document.getElementById("addresserr").innerHTML = 'Ne correspond pas au bon format';
     Bool = false;
@@ -103,5 +103,5 @@ function inspect(formulaire)//prend le formulaire par son `nom '()'
 
 
 /* email, radio, checkbox, date, sujet et bloc de texte= pas de regex (laisser bootstrap gérer les contraintes avec required)
-regex (enlever required)= nom, prenom, ville, adrrese, cp 
+Inclure des regex et enlever required= nom, prenom, ville, adrrese, cp 
  */
