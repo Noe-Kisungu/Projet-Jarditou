@@ -10,11 +10,31 @@
     <link rel="icon" type="image/png"
         href="https://www.pinclipart.com/picdir/big/575-5753846_logo-libre-de-droit-gratuit-png-clipart.png" />
 </head>
-<body> <form name="f1">
-    <h1 class="text-center">recherche d'un prénom</h1>
-    <input type="text" placeholder="Entrez un prénom ici" id="in">
-    <button type="button" onclick="tabMod(this);">Récupérer la valeur</button>
-      </form>
+<body> 
+    <h1 class="text-center">rechercher un prénom a supprimer</h1>
+      <div class="card text-center">
+        <div class="card-header">
+         <h2>Entrez l'un des prénoms suivant pour procéder à sa suppression</h2> 
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Le prénom sera alors vidé puis decalé a la derniére position</h3>
+          <p class="card-text">"Audrey", "Aurélien", "Flavien", "Jérémy", "Laurent", "Melik", "Nouara", "Salem", "Samuel", "Stéphane"</p>
+          <input type="text" placeholder="Entrez un prénom ici" id="in">
+          <button type="button" onclick="tabMod(this);">Supprimer</button>
+        </div>
+        <div class="card-footer text-muted">
+         <p class="text-danger"><b>N'oubliez pas sa majuscule</b></p> 
+        </div>
+      </div>
+
+
+      <nav aria-label="...">
+        <ul class="pagination pagination-lg justify-content-center">
+          <li class="page-item"><a class="page-link" href="file:///C:/Users/80010-02-01/Desktop/Projet-Jarditou/FRONT/DYNAMIQUE/JAVASCRIPT/Evaluation/1.Calcul/index.html">Trier des personnes selon leur âge</a></li>
+          <li class="page-item"><a class="page-link" href="file:///C:/Users/80010-02-01/Desktop/Projet-Jarditou/FRONT/DYNAMIQUE/JAVASCRIPT/Evaluation/2.Table%20de%20multiplication/index.html">Table de multplication</a></li>
+          <li class="page-item"><a class="page-link" href="file:///C:/Users/80010-02-01/Desktop/Projet-Jarditou/FRONT/DYNAMIQUE/JAVASCRIPT/Evaluation/4.total%20d'une%20commande/index.html">Total d'une commande</a></li>
+        </ul>
+    </nav>
       <span id="notfound"></span>
       <span id="noname"></span>
     <script src="assets/js/tab.js">
