@@ -1,0 +1,1 @@
+USE DATABASE papyrus;/* selectioner une base de donné */

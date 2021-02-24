@@ -4,8 +4,8 @@ CREATE DATABASE hotelx; /* Creation de la base de données */
 USE hotelx; /* On va sur cette base de données pour la manipuler */
 
 CREATE TABLE station(
-num_station INT(11) NOT NULL PRIMARY KEY, -- <-- Ceci est une colonne, elle contiendra des valeurs (VALUES) qu'elle va a`ligner`
-nom_station varchar(50) NOT NULL -- On peut metre NOT NULL quand sa ne peut pas etre null
+num_station INT(11) NOT NULL PRIMARY KEY, /* <-- Ceci est une colonne, elle contiendra des valeurs (VALUES) qu'elle va a`ligner`*/
+nom_station varchar(50) NOT NULL /* On peut metre NOT NULL quand sa ne peut pas etre null */
 );
 
 CREATE TABLE hotel(
@@ -17,9 +17,9 @@ num_hotel INT  NOT NULL PRIMARY KEY,
 num_station INT NOT NULL
 );
 
-CREATE TABLE chambre( /* creatrion d'une table */
+CREATE TABLE chambre( 
 
-capacite_chambre INT NOT NULL, /* Creation de la base de données */
+capacite_chambre INT NOT NULL, 
 degre_confort INT NOT NULL,
 exposition varchar(50),
 type_chambre INT NOT NULL,

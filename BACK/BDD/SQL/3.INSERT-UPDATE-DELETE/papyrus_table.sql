@@ -1,10 +1,10 @@
-DROP DATABASE IF EXISTS papyrus;
+DROP DATABASE IF EXISTS papyrus;/* Suppresion de la base de données si elle existe */
 
-CREATE DATABASE papyrus;
+CREATE DATABASE papyrus;/* Creation de la base de données */
 
-USE papyrus;
+USE papyrus;/* On va sur cette base de données pour la manipuler */
 
-CREATE TABLE `fournis` (
+CREATE TABLE `fournis` (/* creatrion d'une table */
   `numfou` int NOT NULL,
   `nomfou` varchar(25) NOT NULL,
   `ruefou` varchar(50) NOT NULL,
@@ -33,7 +33,7 @@ CREATE TABLE `entcom` (
   `numfou` int(11) DEFAULT NULL,
   PRIMARY KEY (`numcom`),
   KEY `numfou` (`numfou`),
-  CONSTRAINT `entcom_ibfk_1` FOREIGN KEY (`numfou`) REFERENCES `fournis` (`numfou`)
+  CONSTRAINT `entcom_ibfk_1` FOREIGN KEY (`numfou`) REFERENCES `fournis` (`numfou`)/*Les tables contenant des clé etrangère doivent toujours atre placées après leur table de reference*/ 
 );
 
 CREATE TABLE `ligcom` (

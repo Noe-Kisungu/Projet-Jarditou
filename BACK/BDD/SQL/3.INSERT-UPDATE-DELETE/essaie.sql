@@ -1,0 +1,62 @@
+DROP DATABASE IF EXISTS papyrus;/* Suppresion de la base de données si elle existe */
+
+CREATE DATABASE papyrus; /* Creation de la base de données */
+USE papyrus; /* On va sur cette base de données pour la manipuler */
+
+CREATE TABLE FOURNIS(
+
+NUMFOU INT(11) PRIMARY KEY,
+NOMFOU varchar(25),
+RUEFOU varchar(50),
+POSFOU CHAR(5), 
+VILFOU varchar(30),
+CONFOU varchar(15), 
+SATISF TINYINT(4)
+);  
+
+CREATE TABLE PRODUIT( /* creatrion d'une table */
+
+CODART CHAR(4) PRIMARY KEY, 
+LIBART varchar(30), 
+STKALE INT (11),
+STKPHY INT (11),
+QTEANN INT (11),
+UNIMES CHAR(5)
+);
+
+CREATE TABLE VENTE(
+
+CODART CHAR(4) PRIMARY KEY,
+NUMFOU INT (11) PRIMARY KEY, 
+DELLIV SMALLINT(6), 
+QTE1 INT(11),
+PRIX1 DECIMAL(5,0),
+QTE2 INT (11),
+PRIX2 DECIMAL(5,0), 
+QTE3 INT (11),
+PRIX3 DECIMAL(5,0)
+);
+ 
+
+CREATE TABLE ENTCOM(
+
+NUMCOM INT(11) PRIMARY KEY,  
+OBSCOM varchar(50), 
+DATCOM TIMESTAMP("YYYY-MM-DD"), 
+NUMFOU INT(11) NOT NULL,
+FOREIGN KEY(NUMFOU) REFERENCES FOURNIS(NUMFOU) /*Les tables contenant des clé etrangère doivent toujours atre placées après leur table de reference*/ 
+);
+     
+CREATE TABLE LIGCOM(
+
+NUMCOM INT(11) PRIMARY KEY, 
+NUMLIG TINYINT(4) PRIMARY KEY, 
+CODART CHAR(4), 
+QTECDE INT(11), 
+PRIUNI DECIMAL(5,0), 
+QTELIV INT (11),
+DERLIV DATE,
+FOREIGN KEY(CODART) REFERENCES PRODUIT(CODART),
+FOREIGN KEY(NUMCOM) REFERENCES LIGCOM(NUMCOM)
+);
+

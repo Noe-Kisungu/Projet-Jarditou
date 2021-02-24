@@ -1,0 +1,4 @@
+1.Téléchargez l'élément suivant : Base de données Papyrus
+2.L'exécuter sur Phpmyadmin
+3.Importez les données  à l'aide des fichiers CXSV produit.csv et vente.csv dans les tables correspondantes.
+3.1.Ne pa oublier de corriger l'ordonement des colonnes dans les ficier exel
