@@ -2,3 +2,4 @@
 2.L'exécuter sur Phpmyadmin
 3.Importez les données  à l'aide des fichiers CXSV produit.csv et vente.csv dans les tables correspondantes.
 3.1.Ne pa oublier de corriger l'ordonement des colonnes dans les ficier exel
+4.Recopier sur VSCode les valeurs dans les 3 tables comme montrées en photo puis les exécuter sur Phpmyadmin avec l'ordre INSERT
