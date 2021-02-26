@@ -74,3 +74,4 @@ JOIN chambre on res_cha_id = cha_id
 JOIN hotel on cha_hot_id = hot_id
 JOIN station on hot_sta_id = sta_id
 GROUP BY sta_id
+
