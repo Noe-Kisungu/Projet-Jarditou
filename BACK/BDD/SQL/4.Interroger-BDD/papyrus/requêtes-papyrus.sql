@@ -20,7 +20,7 @@ SELECT datcom FROM entcom
 WHERE (MONTH)datcom = 3 OR (MONTH)datcom = 4
 SELECT numcom AS 'commandes Mars-Avril'
 FROM   entcom 
-WHERE  month(datcom) BETWEEN 03 AND04
+WHERE  month(datcom) BETWEEN 03 AND 04
 --7. Quelles sont les commandes du jour qui ont des observations particulières ?(Affichage numéro de commande, date de commande)
 SELECT numcom, obscom, datcom FROM entcom 
 WHERE  obscom is NOT NULL
