@@ -1,2 +1,21 @@
 http://localhost:8080/PHP/hello
- peut etre utile: https://www.google.com/search?q=localhost%3A8080%2F&rlz=1C1CHBF_frFR937FR938&oq=localhost%3A8080%2F&aqs=chrome..69i60j69i57j69i60l2j69i58j69i60.2606j0j4&sourceid=chrome&ie=UTF-8
+Peut etre utile: https://www.google.com/search?q=localhost%3A8080%2F&rlz=1C1CHBF_frFR937FR938&oq=localhost%3A8080%2F&aqs=chrome..69i60j69i57j69i60l2j69i58j69i60.2606j0j4&sourceid=chrome&ie=UTF-8
+
+Index of Projet-Jarditou: http://www.jarditou.dvp:8080/
+
+A revoir: https://www.tutorialspoint.com/php-env —————————————— https://www.php.net/manual/fr/function.sprintf.php
+
+
+
+
+<!--Si le tableau n'est pas vide , affiche le produit.
+Sinnon (si le tableau est vide) affiche le msg -->
+<!-- <?php //if (tableau != 0 ) 
+//{ 
+?>
+Tableau
+
+<?php// }
+//else 
+//{ echo pas de tabelau}
+?> -->
