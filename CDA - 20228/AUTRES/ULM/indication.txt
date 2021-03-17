@@ -3,4 +3,11 @@ l'user est deja insc est il veut consuleter ceci cela
 retour du livre? = scenario principle stop ou le mec doit emprunter / interaction entre users et machine / si le benevole set la il a les meme droit que l'user/ 
 scen aletrnative= inimaginable
 
-benevole = etude de cas d'utilisation
+use = action obligatoire
+
+lertter de relance ()biblioer = employé)
+visiteur peut consulter les document en libre accés
+
+etat lecteur = nbr emprunt, quelle sont les emprunt 
+
+caution --< fiche d'epreint --> memeber
