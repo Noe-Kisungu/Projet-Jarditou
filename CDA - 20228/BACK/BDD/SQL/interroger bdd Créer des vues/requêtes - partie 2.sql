@@ -12,6 +12,11 @@ SELECT nom, titre, salaire FROM employe WHERE titre =(SELECT titre FROM employe 
 SELECT dept.nodept, dept.nom AS "nom du département", employe.nom AS "nom employé" from employe right join dept on nodep=nodept ORDER BY nodept
 OU
 SELECT dept.nodept, dept.nom , employe.nom from employe right join dept on nodep=nodept ORDER BY nodept
+--rechercher la moyenne des salaires de chaque département 
+SELECT nodep, AVG (salaire) FROM employe GROUP BY nodep;
 --Afficher les lettres qui sont l'initiale d'au moins trois employés
-
+SELECT LEFT(nom,1) AS initial FROM employe GROUP BY initial HAVING COUNT(initial)>=3
+OU
+SELECT LEFT(nom,1) AS initial FROM employe HAVING COUNT(initial)>=3
 --Rechercher les titres et la moyenne des salaires par titre dont la moyenne est supérieure à la moyenne des salaires des Représentants.
+SELECT titre, AVG(salaire) as moy FROM employe GROUP BY titre HAVING moy > (SELECT Avg(salaire) FROM employe WHERE titre = 'représentant')
