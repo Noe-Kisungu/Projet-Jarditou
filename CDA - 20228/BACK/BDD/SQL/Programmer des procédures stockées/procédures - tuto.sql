@@ -46,3 +46,5 @@ par exemple
 [blabla...] where truc_ville = param2 and id_bidule= param1
 le type de ton paramètre doit être du même tye que celui du champs que tu vas devoir couvrir.
 */
+
+
