@@ -18,7 +18,7 @@ CALL lst_fournis;
 DELIMITER |
 CREATE PROCEDURE lst_commandes(IN obs VARCHAR (50))
 BEGIN 
-SELECT obscom AS "signalisation particuliere"
+SELECT obscom AS "Signalisations particulières"
 FROM   entcom
 WHERE  obscom LIKE CONCAT ('%',obs,'%');
 END |

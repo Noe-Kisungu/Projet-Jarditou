@@ -1,5 +1,5 @@
 --Rechercher le numéro du département, le nom du département, le nom des employés classés par numéro de département (renommer les tables utilisées). 
-SELECT nodep as 'numéro de  département', dept.nom 'nom de département', employe.nom as "nom de l'employé" FROM employe JOIN dept ON nodep=nodept;  
+SELECT nodep as 'numéro de département', dept.nom 'nom de département', employe.nom as "nom de l'employé" FROM employe JOIN dept ON nodep=nodept;  
 --Rechercher le nom et le salaire des employés qui gagnent plus que leur patron, et le nom et le salaire de leur patron.
 SELECT e1.nom as "nom de l'employé", e1.salaire as "salaire de l'employé", e2.nom as "nom du boss", e2.salaire as "salaire du boss" FROM employe as e1, employe as e2 WHERE e1.nosup = e2.noemp AND e1.salaire>e2.salaire
 --Rechercher le nom, le salaire et le numéro de département des employés qui gagnent plus qu'un seul employé du département 31, classés par numéro de département et salaire.
