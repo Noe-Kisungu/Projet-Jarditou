@@ -1,0 +1,18 @@
+Tab1
+afficher que les valeurs:
+$table as $nbjours
+---------
+tu ne recup que la valeurs, qund tu a pas la clé, tu as la valeur!
+_/__/__/__/__/__/__/__/__/__/__/__/__/__/__/_
+Tab2
+substr =le subSTR va te retourner la valeur que tu chreche dans ta chaine de caractére.
+
+ex: $result = strtolower(substr($key,offset 0, lenght 1));
+if ($result == "b") {
+ echo $key;
+}
+----------
+strtolower = miniscule(supp capitale ?)
+----------
+array_slice($) il va fonctioner de l meme façon que le substr ??
+

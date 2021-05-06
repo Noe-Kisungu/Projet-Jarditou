@@ -1,0 +1,8 @@
+http://localhost:8080/index.php
+
+php -S 127.0.0.1:8005
+ $ = Ctrl + C
+
+http://localhost:8005/view/boucle/ex1.php
+
+http://localhost:8005/view/fonction/ex1.php
