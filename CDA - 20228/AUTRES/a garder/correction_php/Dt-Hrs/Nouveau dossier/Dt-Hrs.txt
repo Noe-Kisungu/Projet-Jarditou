@@ -1,0 +1,12 @@
+Intval = donne la val entiere
+%a = nb de jours de differance
+%R = ??
+->diff= la methode diff va pouvoir faire la diff entre les dates 
+->days = affiche le nb de jours
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
+objet datetime = *
+la methode add = permet d'ajouter une periode de date (ajouter une date)
+modify = modif un objet crée (modifier une date)
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
+always the datetime;
+strtotime=https://www.php.net/manual/fr/book.datetime.php

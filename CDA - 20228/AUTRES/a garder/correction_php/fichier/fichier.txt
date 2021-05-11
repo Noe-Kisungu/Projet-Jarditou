@@ -1,0 +1,3 @@
+Les fichier - Fonction de base pour l'ouverture des fichier, lire, parcourir, manipuler ou fermer
+/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
+la fct parcour les ficiers et recupere les fichiers
